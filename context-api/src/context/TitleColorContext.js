@@ -1,5 +1,5 @@
 // contexto mais complexo
-import { createContext, useReducer, useState } from "react";
+import { createContext, useReducer } from "react";
 
 export const TitleColorContext = createContext();
 
