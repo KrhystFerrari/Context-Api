@@ -1,20 +1,20 @@
 nav {
     display: flex;
     justify-content: center;
-}
-
-nav a {
+  }
+  
+  nav a {
     margin: 0 10px;
     padding: 5px;
     text-decoration: none;
     color: #000;
-}
-
-nav a:hover {
+  }
+  
+  nav a:hover {
     color: #ccc;
-}
-
-.active {
+  }
+  
+  .active {
     background-color: #000;
     color: #fff;
-}
+  }

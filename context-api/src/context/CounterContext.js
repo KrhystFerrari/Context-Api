@@ -1,17 +1,15 @@
-// 1 - criando o contexto
-import { createContext, useState } from "react"
+// 1 - criar contexto
+import { createContext, useState } from "react";
 
+export const CounterContext = createContext();
 
-export const CounterContext = createContext()
+// 2 - criar provider
+export const CounterContextProvider = ({ children }) => {
+  const [counter, setCounter] = useState(0);
 
-// 2 - Create Provider
-export const CounterContextProvider = ({children}) => {
-
-    const [counter, setCounter] = useState(5)
-
-    return (
-        <CounterContext.Provider value={{counter, setCounter}}>
-            {children}
-        </CounterContext.Provider>
-    )
-}
+  return (
+    <CounterContext.Provider value={{ counter, setCounter }}>
+      {children}
+    </CounterContext.Provider>
+  );
+};
